@@ -1,0 +1,36 @@
+<head>
+  <title>chatterific</title>
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="chats">
+      <div class="inner">
+        {{> chats}}
+      </div>
+    </div>
+    <div id="form">
+      {{> form}}
+    </div>
+  </div>
+</body>
+
+<template name="chats">
+  {{#each chats}}
+    {{> chat}}
+  {{/each}}
+</template>
+
+<template name="chat">
+  <div class="chat">
+    {{name}}: {{words}}
+  </div>
+</template>
+
+<template name="form">
+  <form action="#" class="form-inline">
+    <input type="text" name="name" placeholder="Name" class="input-small">
+    <input type="text" name="words" placeholder="Whatchu want to say?" class="input-xlarge">
+    <input type="submit" value="Say" class="btn btn-primary">
+  </form>
+</template>

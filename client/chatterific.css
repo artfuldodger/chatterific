@@ -1,0 +1,29 @@
+#wrapper {
+  width: 700px;
+  font-size: 1.2em;
+  background:yellow;
+  height: 600px;
+  margin: 0 auto;
+}
+
+#chats {
+  overflow: scroll;
+  height: 100%;
+}
+
+#chats .inner {
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+#form {
+  position: relative;
+  width: 700px;
+  height: 40px;
+  padding-top: 10px;
+  background: red;
+}
+
+#form form {
+  padding-left: 20px;
+}
